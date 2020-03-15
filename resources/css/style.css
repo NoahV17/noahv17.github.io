@@ -51,6 +51,7 @@ img {
 	border: 3px solid #000000;
 	height: 250px;
 	transition: 0.2s;
+	margin: 3px;
 }
 
 img:hover {
@@ -82,23 +83,28 @@ img.short {
 
 
 
-
+#frontNav {
+	color: #000000;
+}
 
 #frontPage {
 	font-size: 90px;
 	background: #D7F9F1;
+	color: #000000;
 }
 
 nav {
 	font-size: 50px;
 	background: #618B4A;
-	padding: 0px;
+	padding: 5px;
+	
 }
 
 nav a {
     color: #ffffff;
     width: 100px;
-	height: auto;		
+	height: auto;
+	margin: 20px;
 	
 }
 
