@@ -1,0 +1,193 @@
+
+html{
+	background: #D7F9F1;
+	text-align: center;
+	font-family: 'oswald';
+	font-size: 20px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);	
+}
+
+body {
+	text-align: center;
+	margin: 0px; /*Or is 5px padding better???????????????????*/
+}
+
+h1 { 
+	/*color: #ce7b91;*/
+	color: #7AA095;
+	font-size: 180px;
+	text-align: center;
+	text-shadow: 1px 4px 2px #121212;
+}
+
+
+h2 {
+	color: #40531B;
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 3px 2px 2px #121212;										/*GENERAL TEXT SETTINGS*/
+	letter-spacing: 2px;
+}
+
+h3 {
+	color: #000000;
+	font-size: 50px;
+}
+
+h4 {
+	color: #000000;
+}
+	
+p {
+	color: #000000;
+	font-size: 30px;
+}
+
+div {
+	position: center;
+}
+
+img {
+	border: 3px solid #000000;
+	height: 250px;
+	transition: 0.2s;
+}
+
+img:hover {
+	border: 3px solid #0ee;
+	filter:grayscale(100%);
+}
+
+img.tall {
+	height: 250px;
+}
+
+img.short {
+	width: 500px;
+}
+
+.photos {
+	margin: 50px;
+	padding: 50px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#frontPage {
+	font-size: 90px;
+	background: #D7F9F1;
+}
+
+nav {
+	font-size: 50px;
+	background: #618B4A;
+	padding: 0px;
+}
+
+nav a {
+    color: #ffffff;
+    width: 100px;
+	height: auto;		
+	
+}
+
+nav a:hover{
+    text-shadow: 2px 2px 3px #000000;
+	
+}
+
+
+
+
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;														/*STICKY PROPERTIES*/
+	background-color: white;
+ }
+
+
+
+
+
+table {
+	
+}
+
+th {
+	background-color: #618B4A;
+	padding: 20px;
+	border-radius: 4px;
+	margin: 5px;
+	border-spacing: 5px;
+}
+
+td {
+	margin:;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+
+tr:nth-child(even) {
+	background-color: #8bad6c;
+	border-radius: 4px;
+	padding: 10px;
+
+}
+
+tr:nth-child(odd) {
+	background-color: #81aB6A;
+	border-radius: 4px;
+	padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+/*THE PHOTO CATEGORY SELECTOR*/
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  text-align: center;
+  font-size: 60px;
+  cursor: pointer;
+  color: black;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
