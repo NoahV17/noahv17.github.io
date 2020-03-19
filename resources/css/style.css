@@ -10,10 +10,13 @@ html{
 body {
 	text-align: center;
 	margin: 0px; /*Or is 5px padding better???????????????????*/
+	height: 100%;
 }
+
 
 h1 { 
 	/*color: #ce7b91;*/
+	margin: 0px;
 	color: #7AA095;
 	font-size: 180px;
 	text-align: center;
@@ -84,12 +87,12 @@ img.short {
 
 
 #frontNav {
-	color: #000000;
+	color: #ffffff;
 }
 
 #frontPage {
 	font-size: 90px;
-	background: #D7F9F1;
+	background: transparent;
 	color: #000000;
 }
 
@@ -193,6 +196,9 @@ tr:nth-child(odd) {
   display: table;
   clear: both;
 }
+
+
+
 
 
 
