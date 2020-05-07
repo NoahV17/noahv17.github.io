@@ -5,6 +5,9 @@ html{
 	font-family: 'oswald';
 	font-size: 20px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);	
+	height: 100%;
+	
+	
 }
 
 body {
@@ -12,6 +15,10 @@ body {
 	margin: 0px; /*Or is 5px padding better???????????????????*/
 	height: 100%;
 	background-repeat: no;
+	
+	min-height:100%; 
+    position:relative; 
+    padding-bottom:[footer-height] 
 }
 
 
@@ -44,7 +51,7 @@ h4 {
 	
 p {
 	color: #000000;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 div {
@@ -125,10 +132,9 @@ nav a:hover{
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;														/*STICKY PROPERTIES*/
-	background-color: white;
+	background-color: transparent;
+	color: white;
  }
-
-
 
 
 
