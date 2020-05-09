@@ -6,7 +6,13 @@ html{
 	font-size: 20px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);	
 	height: 100%;
-	
+	background: repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #606dbc 40px,
+  #465298 40px,
+  #465298 80px
+);
 	
 }
 
@@ -18,7 +24,7 @@ body {
 	
 	min-height:100%; 
     position:relative; 
-    padding-bottom:[footer-height] 
+    padding-bottom:[footer-height] ;
 }
 
 
@@ -31,6 +37,10 @@ h1 {
 	text-shadow: 1px 4px 2px #121212;
 }
 
+#black{
+	color: #000000;
+	text-shadow: 3px 3px 9px #ffffff;
+}
 
 h2 {
 	color: #40531B;
@@ -136,8 +146,16 @@ nav a:hover{
 	color: white;
  }
 
-
-
+/*.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #618B4A;
+  color: white;
+  text-align: center;
+}
+*/
 table {
 	
 }
