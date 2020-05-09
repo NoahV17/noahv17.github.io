@@ -9,9 +9,9 @@ html{
 	background: repeating-linear-gradient(
   30deg,
   #819ecc,
-  #817ecc 40px,
-  #6773a8 40px,
-  #6773a8 80px
+  #817ecc 80px,
+  #6773a8 80px,
+  #6773a8 160px
 );
 	
 }
@@ -116,7 +116,7 @@ img.short {
 
 nav {
 	font-size: 50px;
-	background: linear-gradient(342deg, #587d87, #58875d);
+	background: linear-gradient(342deg, #46859c, #18272a);
 	padding: 5px;
 	
 }
