@@ -7,11 +7,11 @@ html{
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);	
 	height: 100%;
 	background: repeating-linear-gradient(
-  30deg,
+  15deg,
   #819ecc,
-  #817ecc 80px,
-  #6773a8 80px,
-  #6773a8 160px
+  #817ecc 400px,
+  #6773a8 400px,
+  #6773a8 800px
 );
 	
 }
@@ -20,7 +20,6 @@ body {
 	text-align: center;
 	margin: 0px; /*Or is 5px padding better???????????????????*/
 	height: 100%;
-	background-repeat: no;
 	
 	min-height:100%; 
     position:relative; 
@@ -116,7 +115,7 @@ img.short {
 
 nav {
 	font-size: 50px;
-	background: linear-gradient(342deg, #46859c, #18272a);
+	background: #1a292c;
 	padding: 5px;
 	
 }
