@@ -7,11 +7,11 @@ html{
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);	
 	height: 100%;
 	background: repeating-linear-gradient(
-  45deg,
-  #809ddc,
-  #807ddc 40px,
-  #6672b8 40px,
-  #6672b8 80px
+  30deg,
+  #819ecc,
+  #817ecc 40px,
+  #6773a8 40px,
+  #6773a8 80px
 );
 	
 }
@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-	color: #40531B;
+	color: #498230;
 	font-size: 80px;
 	text-align: center;
 	text-shadow: 3px 2px 2px #121212;										/*GENERAL TEXT SETTINGS*/
@@ -116,7 +116,7 @@ img.short {
 
 nav {
 	font-size: 50px;
-	background: #618B4A;
+	background: linear-gradient(342deg, #587d87, #58875d);
 	padding: 5px;
 	
 }
