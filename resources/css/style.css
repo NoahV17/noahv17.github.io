@@ -145,53 +145,6 @@ nav a:hover{
 	color: white;
  }
 
-/*.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #618B4A;
-  color: white;
-  text-align: center;
-}
-*/
-th, td{
-	border: 2px solid black;
-	
-}
-
-th {
-	background-color: #618B4A;
-	padding: 20px;
-	border-radius: 4px;
-	margin: 5px;
-	border-spacing: 5px;
-}
-
-td {
-	margin:;
-	padding: 10px;
-	border-radius: 4px;
-}
-
-
-tr:nth-child(even) {
-	background-color: #8bad6c;
-	border-radius: 4px;
-	padding: 10px;
-
-}
-
-tr:nth-child(odd) {
-	background-color: #81aB6A;
-	border-radius: 4px;
-	padding: 10px;
-
-}
-
-
-
-
 
 
 
