@@ -1,0 +1,162 @@
+
+html{
+	background: #ffffff;
+	text-align: center;
+	font-family: 'oswald';
+	font-size: 20px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);	
+	
+}
+
+body {
+	text-align: center;
+	height: 100%;
+	margin: 0px;
+	min-height:100%; 
+}
+
+
+h1 { 
+	/*color: #ce7b91;*/
+	padding-bottom: 5px;
+	padding-top: 0px;
+	color: #7AA095;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 1px 4px 2px #121212;
+	margin: 0px;
+}
+
+
+h2 {
+	color: #498230;
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 3px 2px 2px #121212;										/*GENERAL TEXT SETTINGS*/
+	letter-spacing: 2px;
+}
+
+h3 {
+	color: #000000;
+	font-size: 30px;
+}
+
+h4 {
+	color: #000000;
+}
+	
+p {
+	color: #000000;
+	font-size: 20px;
+}
+
+
+.gallery {
+	margin: 10px 50px;
+}
+.gallery img {
+	transition: 1s;
+	padding: 15px;
+	width: 23%;
+}
+.gallery img:hover {
+	transform: scale(1.05);
+}
+
+iframe {
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: /*#333*/ #1a292f;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:#fffdd0 /*<<< yellow     #dddddd <<<  gray*/ ;
+  color: black;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+
+
+	/*background-color:#fffdd0;*/
+
+
+nav {
+	background: #1a292c;
+	padding: 5px;
+	margin: 0px;
+}
+
+nav a {
+    color: #ffffff;
+    width: 100px;
+}
+
+nav a:hover{
+    text-shadow: 2px 2px 3px #000000;
+	
+}
+
+
+
+/*Sets up font size for the front page name and enter button*/
+#name {
+	font-size:150px;
+}
+
+#enter {
+	background: #fff;
+	color: #000;
+	font-size: 60px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+div.sticky {
+	position: sticky;
+	top: 0;														/*STICKY PROPERTIES*/
+	background-color: #1a292f;
+	color: white;
+ }
+
+
+
+
+
+
+
+
+

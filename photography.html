@@ -5,309 +5,89 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Noah Vario</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Noah Vario</title>
         <meta name="description" content="Noah Vario's photography business">
         <meta name="keywords" content="noah, vario, photo, photography, video, videography, art, modern, sales, business">
-        <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
-    
-		<link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon/favicon-16x16.png">
+        
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/lightbox.min.css" type="text/css"/>
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/PNG" sizes="32x32" href="favicon/favicon-32x32.PNG">
+		<link rel="icon" type="image/PNG" sizes="16x16" href="favicon/favicon-16x16.PNG">
 	
 	</head>
 	
+
+	<!--
+	
+	LAZY LOADING FUNCTIONS
 	
 	<script>
-	// Hide all elements with class="containerTab", except for the one that matches the clickable grid column
-	function openTab(tabName) 
+	document.addEventListener("DOMContentLoaded", function() {
+	var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+	if ("IntersectionObserver" in window) 
 	{
-		var i, x;
-		x = document.getElementsByClassName("containerTab");
-		for (i = 0; i < x.length; i++) 
+		let lazyImageObserver = new IntersectionObserver(function(entries, observer) 
 		{
-			x[i].style.display = "none";
-		}
-		document.getElementById(tabName).style.display = "block";
+			entries.forEach(function(entry) 
+			{
+				if (entry.isIntersecting) 
+				{
+					let lazyImage = entry.target;
+					lazyImage.src = lazyImage.dataset.src;
+					lazyImage.srcset = lazyImage.dataset.srcset;
+					lazyImage.classList.remove("lazy");
+					lazyImageObserver.unobserve(lazyImage);
+				}
+			});
+		});
+
+		lazyImages.forEach(function(lazyImage)
+		{
+			lazyImageObserver.observe(lazyImage);
+		});
+		} else {
+	// Possibly fall back to event handlers here
 	}
+	});
 	
 	</script>
-    
+    --->
 	
 	
-	<body>
-		<div class="sticky">
-			
-			
+	<body>	
+		<div class="sticky">	
+			<div class="topnav">
+				<a class="active" href="index.html" style="text-decoration:none">Home</a>
 				
-			<nav>
-				<a href="index.html" style="text-decoration:none">Home</a>
-				<a href="photography.html" style="text-decoration:none">Photography</a>
-				<a href="videography.html" style="text-decoration:none">Videography</a>
-				<a href="about.html" style="text-decoration:none">About/Contact</a>
-			</nav>
-				
-			
-		</div>
-		<h2>Photography</h2>
-		<p style="font-size:30px;">*All photos are slightly downsized to prevent downloading full resolution pictures*</p>
-	
-		<!-- The grid columns -->
-		<div class="row">
-			<div class="column" onclick="openTab('b1');" style="background:transparent;">Landscape</div>
-			<div class="column" onclick="openTab('b2');" style="background:transparent;">Macro</div>
-			<div class="column" onclick="openTab('b4');" style="background:transparent;">Subject</div>
-		</div>
-
-		<!-- The expanding grid (hidden by default) -->
-		<div id="b1" class="containerTab" style="background:transparent">		
-			<p>Landscape</p>
-			<div class="landscape">
-				
-				<a href="./resources/images--videos/photos/blueSky.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/blueSky.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/goldSky.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/goldSky.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/beachAtWoods.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/beachAtWoods.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/HDRLighthouse.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/HDRLighthouse.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/laSaletteTrees.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/laSaletteTrees.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/angel.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/angel.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/berry.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/berry.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/buddah.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/buddah.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/duck.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/duck.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/blackstoneRiver.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/blackstoneRiver.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/candyCane.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/candyCane.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/deer.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/deer.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/chandelier.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/chandelier.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/condensation.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/condensation.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/feather.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/feather.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/EUstatue.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/EUstatue.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/fist.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/fist.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/gold.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/gold.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/goldenCat.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/goldenCat.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/neonSigns.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/neonSigns.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/rockDancing.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/rockDancing.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/scare.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/scare.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/somePurpleDrops.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/somePurpleDrops.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/stoneHead.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/stoneHead.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/woodFungi.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/woodFungi.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/nick.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/nick.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/superFlower.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/superFlower.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/glasss.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/glasss.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/upsideGrass.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/upsideGrass.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/pointBridge.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/pointBridge.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/cityPark.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/cityPark.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/frontBuild.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/frontBuild.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/flippedSand.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/flippedSand.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/castle.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/castle.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/miniSandBush.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/miniSandBush.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/bamboo.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/bamboo.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/BWBuildings.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/BWBuildings.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/sandBeer1.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/sandBeer1.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/brokenBeer.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/brokenBeer.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/rocky.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/rocky.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/honeyWaffle.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/honeyWaffle.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/uncrackBubbles.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/uncrackBubbles.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/snowPull.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/snowPull.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/shapes.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/shapes.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/xmasTree.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/xmasTree.jpg">
-				</a>
-				
-				
-				<a href="./resources/images--videos/photos/rollEggs2.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/rollEggs2.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/lightTent.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/lightTent.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/iceFace.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/iceFace.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/iceBubbles.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/iceBubbles.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/hails.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/hails.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/icedBush.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/icedBush.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/friedEel.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/friedEel.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/fishEggs.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/fishEggs.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/closeSnow.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/closeSnow.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/brightSky.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/brightSky.jpg">
-				</a>
-				
-				<a href="./resources/images--videos/photos/angelStat.jpg" target="blank">
-					<img border="1px" alt="bluesky" src="./resources/images--videos/photos/angelStat.jpg">
-				</a>
-				
-				
-			</div>
-		</div>
-	
-		<div id="b2" class="containerTab" style="display:none;background:trasparent">
-			<p>Macro</p>
-			<div class="macro">
+				<div class="topnav-right">
+					<a href="photography.html">Photography</a>
+					<a href="videography.html">Videography</a>
+					<a href="about.html" style="text-decoration:none">About</a>
 				</div>
-		</div>
-		
-		<img src="myimage.jpg" loading="lazy" alt="..." />
-		<iframe src="content.html" loading="lazy"></iframe>
-		
-		<div id="b3" class="containerTab" style="display:none;background:transparent">
-			<p>Subject</p>
-			<div class="subject">
-			
 			</div>
+			<h1>Photography</h1>
 		</div>
+		
+		
+		
+		
+		<div class="gallery">
+			<a href="images/bird.jpg" data-lightbox="gallery"><img src="images/bird-small.jpg"></a>
+			<a href="images/splash.jpg" data-lightbox="gallery"><img src="images/splash-small.jpg"></a>
+			<a href="images/star.jpg" data-lightbox="gallery"><img src="images/star-small.jpg"></a>
+			<a href="images/pink.jpg" data-lightbox="gallery"><img src="images/pink-small.jpg"></a>
+			<a href="images/drop.jpg" data-lightbox="gallery"><img src="images/drop-small.jpg"></a>
+			<a href="images/duck.jpg" data-lightbox="gallery"><img src="images/duck-small.jpg"></a>
+			
+		</div>
+		
+		
 		
 		<h4 class="footer">For business inquires contact me at <a href="mailto:noahvcontact@gmail.com?Subject=Hello%20world!" target="blank">noahvcontact@gmail.com</a></h4>
-    </body>
+		<script src="js/lightbox-plus-jquery.js"></script>
+   </body>
 </html>
