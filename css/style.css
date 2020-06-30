@@ -56,9 +56,26 @@ p {
 }
 .gallery img {
 	transition: 1s;
-	padding: 15px;
-	width: 23%;
+	padding: 1%;
+	width: 46%;
 }
+
+@media screen and (min-width: 400px) {
+  .gallery img {
+    transition: 1s;
+	padding: 1%;
+	width: 46%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .gallery img {
+    transition: 1s;
+	padding: 1%;
+	width: 22%;
+  }
+}
+
 .gallery img:hover {
 	transform: scale(1.05);
 }
@@ -84,9 +101,20 @@ iframe {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 18px 20px;
+  padding: 12px 14px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 400px) {
+  .topnav a {
+    float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 18px 20px;
+	text-decoration: none;
+	font-size: 25px;
+  }
 }
 
 /* Change the color of links on hover */
