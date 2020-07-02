@@ -21,12 +21,23 @@ h1 {
 	padding-bottom: 5px;
 	padding-top: 0px;
 	color: #7AA095;
-	font-size: 50px;
+	font-size: 30px;
 	text-align: center;
 	text-shadow: 1px 4px 2px #121212;
 	margin: 0px;
 }
 
+@media screen and (min-width: 544px) {
+  h1 {
+	padding-bottom: 5px;
+	padding-top: 0px;
+	color: #7AA095;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 1px 4px 2px #121212;
+	margin: 0px;
+  }
+}
 
 h2 {
 	color: #498230;
@@ -50,7 +61,7 @@ p {
 	font-size: 20px;
 }
 
-
+/*Normal gallery tags*/
 .gallery {
 	margin: 10px 50px;
 }
@@ -60,15 +71,8 @@ p {
 	width: 46%;
 }
 
-@media screen and (min-width: 400px) {
-  .gallery img {
-    transition: 1s;
-	padding: 1%;
-	width: 46%;
-  }
-}
-
-@media screen and (min-width: 800px) {
+/*When under 1000px the pictures take up higher % of screen*/
+@media screen and (min-width: 1000px) {
   .gallery img {
     transition: 1s;
 	padding: 1%;
@@ -87,7 +91,15 @@ iframe {
 
 
 
+.footer {
+  font-size: 15px;
+}
 
+@media screen and (min-width: 544px) {
+  .footer {
+	font-size: 25px;
+  }
+}
 
 
 /* Add a black background color to the top navigation */
@@ -106,7 +118,7 @@ iframe {
   font-size: 15px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 544px) {
   .topnav a {
     float: left;
 	color: #f2f2f2;
