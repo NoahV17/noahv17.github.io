@@ -21,10 +21,23 @@ h1 {
 	padding-bottom: 5px;
 	padding-top: 0px;
 	color: #7AA095;
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 1px 4px 2px #121212;
+	margin: 0px;
+}
+
+
+@media screen and (min-width: 300px) {
+  h1 {
+	padding-bottom: 5px;
+	padding-top: 0px;
+	color: #7AA095;
 	font-size: 30px;
 	text-align: center;
 	text-shadow: 1px 4px 2px #121212;
 	margin: 0px;
+  }
 }
 
 @media screen and (min-width: 544px) {
