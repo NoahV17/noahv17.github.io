@@ -170,6 +170,12 @@ nav {
 	margin: 0px;
 }
 
+#navb{
+	background: #1a292c;
+	padding: 5px;
+	margin: 0px;
+}
+
 nav a {
     color: #ffffff;
     width: 100px;
@@ -179,6 +185,8 @@ nav a:hover{
     text-shadow: 2px 2px 3px #000000;
 	
 }
+
+
 
 
 
