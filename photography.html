@@ -19,44 +19,6 @@
 	
 	</head>
 	
-
-	<!--
-	
-	LAZY LOADING FUNCTIONS
-	
-	<script>
-	document.addEventListener("DOMContentLoaded", function() {
-	var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-
-	if ("IntersectionObserver" in window) 
-	{
-		let lazyImageObserver = new IntersectionObserver(function(entries, observer) 
-		{
-			entries.forEach(function(entry) 
-			{
-				if (entry.isIntersecting) 
-				{
-					let lazyImage = entry.target;
-					lazyImage.src = lazyImage.dataset.src;
-					lazyImage.srcset = lazyImage.dataset.srcset;
-					lazyImage.classList.remove("lazy");
-					lazyImageObserver.unobserve(lazyImage);
-				}
-			});
-		});
-
-		lazyImages.forEach(function(lazyImage)
-		{
-			lazyImageObserver.observe(lazyImage);
-		});
-		} else {
-	// Possibly fall back to event handlers here
-	}
-	});
-	
-	</script>
-    --->
-	
 	
 	<body>	
 		<div class="sticky">	
@@ -69,30 +31,23 @@
 					<a href="about.html" style="text-decoration:none">About</a>
 				</div>
 			</div>
-			<h1>Photography</h1>
 		</div>
 		
 		
 		
 		
 		<div class="gallery">
-			<a href="images/bird.jpg" data-lightbox="gallery"><img src="images/bird-small.jpg"></a>
-			<a href="images/splash.jpg" data-lightbox="gallery"><img src="images/splash-small.jpg"></a>
-			<a href="images/star.jpg" data-lightbox="gallery"><img src="images/star-small.jpg"></a>
-			<a href="images/pink.jpg" data-lightbox="gallery"><img src="images/pink-small.jpg"></a>
-			<a href="images/drop.jpg" data-lightbox="gallery"><img src="images/drop-small.jpg"></a>
-			<a href="images/duck.jpg" data-lightbox="gallery"><img src="images/duck-small.jpg"></a>
-			<a href="images/railBridge.jpg" data-lightbox="gallery"><img src="images/railBridge-small.jpg"></a>
-			<a href="images/river.jpg" data-lightbox="gallery"><img src="images/river-small.jpg"></a>
-			<a href="images/train.jpg" data-lightbox="gallery"><img src="images/train-small.jpg"></a>
-			<a href="images/caterpillar.jpg" data-lightbox="gallery"><img src="images/caterpillar-small.jpg"></a>
-			<a href="images/pipe.jpg" data-lightbox="gallery"><img src="images/pipe-small.jpg"></a>
-			
+			<img src="images/bird-small.jpg">
+			<img src="images/splash-small.jpg">
+			<img src="images/star-small.jpg">
+			<img src="images/pink-small.jpg">
+			<img src="images/drop-small.jpg">
+			<img src="images/duck-small.jpg"></a>
+			<img src="images/railBridge-small.jpg">
+			<img src="images/river-small.jpg">
+			<img src="images/train-small.jpg">
+			<img src="images/caterpillar-small.jpg">
+			<img src="images/pipe-small.jpg">
 		</div>
-		
-		
-		
-		<h4 class="footer">For business inquires contact me at <a href="mailto:noahvcontact@gmail.com?Subject=Hello%20world!" target="blank">noahvcontact@gmail.com</a></h4>
-		<script src="js/lightbox-plus-jquery.js"></script>
    </body>
 </html>
